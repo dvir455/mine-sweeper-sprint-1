@@ -1,0 +1,46 @@
+.game-container {
+  display: inline-block;
+  background-color: #c0c0c0;
+  border-top: 10px solid #e3e3e3;
+  border-left: 10px solid #e3e3e3;
+  border-right: 10px solid #808080;
+  border-bottom: 10px solid #808080;
+  padding: 5px;
+}
+
+.main-container {
+  text-align: center;
+  width: max-content;
+  margin: 0 auto;
+  background: #c6c6c6;
+  padding: 5px;
+}
+
+.upper-container {
+  display: flex;
+  justify-content: center;
+  width: auto;
+  background-color: #c6c6c6;
+  border-top: 10px solid #808080;
+  border-left: 10px solid #808080;
+  border-right: 10px solid #e3e3e3;
+  border-bottom: 10px solid #e3e3e3;
+ 
+}
+
+.btn-container {
+  text-align: center;
+  margin: 15px;
+}
+
+.info-container span {
+  text-align: center;
+  font-family: 'DS-Digital';
+  font-size: 2em;
+  color: #808080;
+  text-shadow: 0.7px 0.7px 0px black;
+}
+.info-container {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
