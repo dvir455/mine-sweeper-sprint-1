@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/containers.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700"
+      rel="stylesheet"
+    />
+    <title>Mine Sweeper Game</title>
+  </head>
+  <body onload="initGame()">
+    <div class="btn-container">
+      <button class="btn-dif" onclick="changeLevel('beginner')">
+        Beginner
+      </button>
+      <button class="btn-dif" onclick="changeLevel('medium')">Medium</button>
+      <button class="btn-dif" onclick="changeLevel('expert')">Expert</button>
+    </div>
+
+    <div class="main-container">
+      <div class="upper-container">
+        <div class="info-align">
+          <button class="hint-btn" onclick="hintSelector()"></button>
+          <span class="hints">3</span>
+        </div>
+
+        <div class="info-align">
+          <button class="safe-click-btn" onclick="safeClick()"></button>
+          <span class="safe-clicks">3</span>
+        </div>
+
+        <button class="reset" onclick="initGame()"></button>
+
+        <div class="info-align">
+          <button class="mine-btn" onclick="customToggle()"></button>
+          ❤<span class="lives">3</span>
+        </div>
+        <div class="info-align">
+          <button class="sevenboom-btn" onclick="sevenBoom()"></button>
+          ⏰<span class="timer">0</span>
+        </div>
+      </div>
+      <div class="game-container"></div>
+    </div>
+
+    <div class="footer">
+      <div class="info">
+        <span>• Hint is allowed only after the game has started.</span><br />
+        <span>• Safe Clicks are allowed only after the game has started.</span
+        ><br />
+        <span
+          >• To use 7 Boom, click on it, then click on a random place to
+          begin.</span
+        ><br />
+        <span
+          >• To use Custom mines, make sure the level has not began, press on it
+          then choose location.</span
+        ><br />
+        <span>• Click on the SMILEY To reset.</span>
+      </div>
+    </div>
+    <script src="/js/utils.js"></script>
+    <script src="/js/game.js"></script>
+  </body>
+</html>
