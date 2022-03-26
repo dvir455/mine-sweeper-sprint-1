@@ -32,7 +32,7 @@ var gGame = {
 
 function initGame() {
   document.querySelector('.reset').style.backgroundImage =
-    "url('../img/face_unpressed.svg')";
+    "url('img/face_unpressed.svg')";
   gBoard = [];
   infoReset();
   gGame.isFirstClick = true;
@@ -69,7 +69,7 @@ function setMinesNegsCount() {
 
 function gameOver() {
   document.querySelector('.reset').style.backgroundImage =
-    "url('../img/face_lose.svg')";
+    "url('img/face_lose.svg')";
   gGame.isOn = false;
   clearInterval(timerInterval);
   timerInterval = null;
@@ -254,9 +254,9 @@ function checkVictory() {
   if (allMinesFlagged && allTilesShown && gGame.lives > 0) {
     clearInterval(timerInterval);
     document.querySelector('.reset').style.backgroundImage =
-      "url('../img/face_win.svg')";
+      "url('img/face_win.svg')";
 
-    var victorySound = new Audio('../sounds/sfx-victory1.mp3');
+    var victorySound = new Audio('sounds/sfx-victory1.mp3');
     victorySound.play();
     victorySound.volume = 0.3;
     return 'VICTORY';
