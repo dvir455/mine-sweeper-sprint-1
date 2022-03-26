@@ -256,7 +256,7 @@ function checkVictory() {
     document.querySelector('.reset').style.backgroundImage =
       "url('../img/face_win.svg')";
 
-    var victorySound = new Audio('/sounds/sfx-victory1.mp3');
+    var victorySound = new Audio('../sounds/sfx-victory1.mp3');
     victorySound.play();
     victorySound.volume = 0.3;
     return 'VICTORY';
